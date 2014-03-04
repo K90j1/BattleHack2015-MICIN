@@ -1,19 +1,22 @@
 <p id="notice"><%= notice %></p>
 
 <p>
-  <strong>Type:</strong>
+  <strong><%= t(:Type) %></strong>
   <%= @log.type %>
 </p>
 
 <p>
-  <strong>Log:</strong>
+  <strong><%= t(:Log) %></strong>
   <%= @log.log %>
 </p>
-
 <p>
-  <strong>Resolve:</strong>
+    <strong><%= t(:Url) %></strong>
+    <%= @log.url %>
+</p>
+<p>
+  <strong><%= t(:Resolve) %></strong>
   <%= @log.resolve %>
 </p>
 
-<%= link_to 'Edit', edit_log_path(@log) %> |
-<%= link_to 'Back', logs_path %>
+<%= link_to t(:Edit), edit_log_path(@log) %> |
+<%= link_to t(:Back), logs_path %>

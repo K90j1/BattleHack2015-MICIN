@@ -1,11 +1,11 @@
-<h1>Listing logs</h1>
+<h1>ログの一覧</h1>
 
-<table>
+<table class="table table-striped">
   <thead>
     <tr>
-      <th>Type</th>
-      <th>Log</th>
-      <th>Resolve</th>
+      <th><%= t(:Type) %></th>
+      <th><%= t(:Log) %></th>
+      <th><%= t(:Resolve) %></th>
       <th></th>
       <th></th>
       <th></th>
@@ -18,9 +18,9 @@
         <td><%= log.type %></td>
         <td><%= log.log %></td>
         <td><%= log.resolve %></td>
-        <td><%= link_to 'Show', log %></td>
-        <td><%= link_to 'Edit', edit_log_path(log) %></td>
-        <td><%= link_to 'Destroy', log, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to t(:Show), log %></td>
+        <td><%= link_to t(:Edit), edit_log_path(log) %></td>
+        <td><%= link_to t(:Destroy), log, method: :delete, data: { confirm: 'ほんとうに削除しますか？' } %></td>
       </tr>
     <% end %>
   </tbody>
@@ -28,4 +28,4 @@
 
 <br>
 
-<%= link_to 'New Log', new_log_path %>
+<%= link_to t(:NewLog), new_log_path %>

@@ -1,17 +1,30 @@
 <%= form_for(@log) do |f| %>
-  <div class="field">
-    <%= f.label :type %><br>
-    <%= f.text_field :type %>
-  </div>
-  <div class="field">
-    <%= f.label :log %><br>
-    <%= f.text_area :log %>
-  </div>
-  <div class="field">
-    <%= f.label :resolve %><br>
-    <%= f.text_area :resolve %>
-  </div>
-  <div class="actions">
-    <%= f.submit %>
-  </div>
+    <%= render 'shared/error_messages', :object => f.object %>
+    <div class="form-group">
+        <div class="field">
+            <%= f.label t(:Type) %><br>
+            <%= f.text_field :type, class: 'form-control' %>
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="field">
+            <%= f.label t(:Log) %><br>
+            <%= f.text_area :log, class: 'form-control' %>
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="field">
+            <%= f.label t(:Url) %><br>
+            <%= f.text_field :url, class: 'form-control' %>
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="field">
+            <%= f.label t(:Resolve) %><br>
+            <%= f.text_area :resolve, class: 'form-control' %>
+        </div>
+    </div>
+    <div class="actions">
+        <%= f.submit :class => 'btn btn-large btn-primary' %>
+    </div>
 <% end %>

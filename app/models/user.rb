@@ -14,9 +14,7 @@ class User < ActiveRecord::Base
   after_validation { self.errors.messages.delete(:password_digest) }
 
   private
-
     def create_remember_token
-#      self.remember_token = SecureRandom.urlsafe_base64
-    self.remember_token = SecureRandom.base64.tr("+/", "-_")
+    self.remember_token = SecureRandom.base64.tr('+/', '-_')
   end
 end

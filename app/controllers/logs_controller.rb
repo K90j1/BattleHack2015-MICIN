@@ -28,7 +28,8 @@ class LogsController < ApplicationController
     @log = Log.new(log_params)
     respond_to do |format|
       if @log.save
-        format.html { redirect_to @log, notice: 'Log was successfully created.' }
+        format.html { redirect_to @log}
+        flash[:success] = t(:Success)
         format.json { render action: 'show', status: :created, location: @log }
       else
         format.html { render action: 'new' }
@@ -42,7 +43,8 @@ class LogsController < ApplicationController
   def update
     respond_to do |format|
       if @log.update(log_params)
-        format.html { redirect_to @log, notice: 'Log was successfully updated.' }
+        format.html { redirect_to @log}
+        flash[:success] = t(:Success)
         format.json { head :no_content }
       else
         format.html { render action: 'edit' }
