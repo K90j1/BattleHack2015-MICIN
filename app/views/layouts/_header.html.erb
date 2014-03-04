@@ -1,0 +1,15 @@
+<header class="navbar navbar-static-top" role="banner">
+	<div class="container">
+	  <div class="navbar-header">
+      <%= link_to 'DRiPPY BackStage', '/', :id=> 'logo' %>
+	  </div>
+      <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
+        <ul class="nav navbar-nav pull-right">
+          <% if signed_in? %>
+			<li><%= link_to 'Post', new_log_path %></li>
+            <li><%= link_to 'Sign out', signout_path, :method=> 'delete' %></li>
+          <% end %>
+        </ul>
+      </nav>
+    </div>
+</header>
