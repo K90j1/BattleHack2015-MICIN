@@ -16,7 +16,7 @@
     <% @logs.each do |log| %>
       <tr>
         <td><%= log.type %></td>
-        <td><%= log.log %></td>
+        <td><%= truncate(log.log, :length=>300) %></td>
         <td><%= log.resolve %></td>
         <td><%= link_to t(:Show), log %></td>
         <td><%= link_to t(:Edit), edit_log_path(log) %></td>
