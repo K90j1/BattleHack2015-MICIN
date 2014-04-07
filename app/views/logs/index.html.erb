@@ -11,21 +11,18 @@
       <th></th>
     </tr>
   </thead>
-
   <tbody>
-    <% @logs.each do |log| %>
-      <tr>
-        <td><%= log.type %></td>
-        <td><%= truncate(log.log, :length=>300) %></td>
-        <td><%= log.resolve %></td>
-        <td><%= link_to t(:Show), log %></td>
-        <td><%= link_to t(:Edit), edit_log_path(log) %></td>
-        <td><%= link_to t(:Destroy), log, method: :delete, data: { confirm: 'ほんとうに削除しますか？' } %></td>
-      </tr>
-    <% end %>
+  <% @logs.each do |log| %>
+	  <tr>
+		  <td><%= link_to log.type, log %></td>
+		  <td><%= truncate(log.log, :length=>100) %></td>
+		  <td><%= log.resolve %></td>
+		  <td><%= link_to t(:Show), log %></td>
+		  <td><%= link_to t(:Edit), edit_log_path(log) %></td>
+		  <td><%= link_to t(:Destroy), log, method: :delete, data: { confirm: 'ほんとうに削除しますか？' } %></td>
+	  </tr>
+  <% end %>
   </tbody>
 </table>
-
 <br>
-
-<%= link_to t(:NewLog), '' %>
+<%= link_to t(:NewLog), new_user_log_path(current_user) %>

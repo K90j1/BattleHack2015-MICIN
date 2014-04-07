@@ -6,7 +6,7 @@
       <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
         <ul class="nav navbar-nav pull-right">
           <% if signed_in? %>
-			<li><%= link_to t(:NewLog), new_user_log_path %></li>
+			<li><%= link_to t(:NewLog), new_user_log_path(current_user) %></li>
             <li><%= link_to t(:SignOut), signout_path, :method=> 'delete' %></li>
           <% end %>
         </ul>

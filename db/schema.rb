@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140304194309) do
+ActiveRecord::Schema.define(version: 20140407122751) do
 
   create_table "logs", force: true do |t|
     t.string   "type"
@@ -20,6 +20,7 @@ ActiveRecord::Schema.define(version: 20140304194309) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.string   "url"
+    t.integer  "user_id"
   end
 
   create_table "users", force: true do |t|

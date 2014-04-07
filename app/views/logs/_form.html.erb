@@ -1,5 +1,6 @@
-<%= form_for(@log) do |f| %>
-    <%= render 'shared/error_messages', :object => f.object %>
+<%= form_for([@user, @log]) do |f| %>
+
+		<%= render 'shared/error_messages', :object => f.object %>
     <div class="form-group">
         <div class="field">
             <%= f.label t(:Type) %><br>

@@ -3,12 +3,12 @@
 <head>
     <title><%= full_title(yield(:title)) %></title>
     <%= stylesheet_link_tag 'application', :media => 'all' %>
-    <%= stylesheet_link_tag 'http://d.routeflags.com/stylesheets/vendor/highlight/styles/zenburn.css', :media => 'all' %>
-    <%= javascript_include_tag 'application' %>
-    <%= javascript_include_tag 'http://d.routeflags.com/javascripts/vendor/highlight/highlight.pack.js' %>
-    <script>hljs.initHighlightingOnLoad();</script>
+	<%= stylesheet_link_tag    'vendor/highlight/styles/zenburn.css', :media=> 'all' %>
     <%= csrf_meta_tags %>
     <%= render 'layouts/shim' %>
+	<%= javascript_include_tag 'application' %>
+	<%= javascript_include_tag 'vendor/highlight/highlight.pack.js' %>
+	<script>hljs.initHighlightingOnLoad();</script>
 </head>
 <body>
 <%= render 'layouts/header' %>

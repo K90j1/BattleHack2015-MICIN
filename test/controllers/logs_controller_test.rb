@@ -44,6 +44,6 @@ class LogsControllerTest < ActionController::TestCase
       delete :destroy, id: @log
     end
 
-    assert_redirected_to logs_path
+    assert_redirected_to user_logs_path
   end
 end
