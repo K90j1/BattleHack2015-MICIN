@@ -20,6 +20,10 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 
 en:
+  WelcomeMessage: 'ようこそ、コラボレーションエラーログへ'
+  UpdateUser: 'プロフィールを更新しました'
+  DeleteUser: 'ユーザを削除しました'
+  Title: 'コラボレーションエラーログ'
   Type: 'タイトル'
   Log: 'エラーログ'
   Url: '参考になったURL'

@@ -5,7 +5,7 @@ class LogsController < ApplicationController
   # GET /logs
   # GET /logs.json
   def index
-    @logs = Log.all
+    @logs = Log.paginate(:page=> params[:page])
   end
 
   # GET /logs/1
@@ -15,7 +15,9 @@ class LogsController < ApplicationController
 
   # GET /logs/new
   def new
-    @log = Log.new
+    # @log = Log.new
+		@user = Log.find(params[:user_id])
+		@log = @user.log.build
   end
 
   # GET /logs/1/edit

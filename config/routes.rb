@@ -1,6 +1,7 @@
 Elog::Application.routes.draw do
-  resources :logs
-  resources :users
+	resources :users, :shallow=> true do
+		resources :logs
+	end
   resources :sessions, :only=> [:new, :create, :destroy]
   root :to=> 'logs#index'
   get '/signup',  :to=> 'users#new'
