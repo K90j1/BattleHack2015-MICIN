@@ -10,6 +10,6 @@ Elog::Application.routes.draw do
   get '/signin',  :to=> 'sessions#new'
   delete '/signout', :to=> 'sessions#destroy'#, :via=> :delete
 
-	get 'auth/:provider/callback', to: 'sessions#create', via: [:get, :post]
+	get 'auth/:provider/callback', to: 'sessions#create_soical', via: [:get, :post]
 	get 'auth/failure', to: redirect('/'), via: [:get, :post]
 end
