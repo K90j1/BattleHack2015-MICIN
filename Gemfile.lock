@@ -199,6 +199,7 @@ DEPENDENCIES
   jbuilder (~> 1.2)
   jquery-rails
   mysql2
+  omniauth
   omniauth-facebook
   omniauth-twitter
   rails (= 4.0.3)

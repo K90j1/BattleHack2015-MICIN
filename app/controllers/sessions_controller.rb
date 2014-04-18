@@ -12,10 +12,19 @@ class SessionsController < ApplicationController
       flash.now[:danger] = '間違ってるのでもう一度入力してください＞＜'
       render 'new'
     end
-  end
+	end
+
+	def create_soical
+		user = User.from_omniauth(env['omniauth.auth'])
+		# session[:user_id] = user.id
+		sign_in user
+	end
 
   def destroy
     sign_out
     redirect_to root_url
-  end
+	end
+
+	def failure
+	end
 end

@@ -52,13 +52,12 @@ end
 # Use ActiveModel has_secure_password
 gem 'bcrypt-ruby', '~> 3.1.2'
 
-group :social do
-	gem 'devise'
-	gem 'omniauth-twitter'
-	gem 'omniauth-facebook'
-	gem 'twitter'
-	gem 'fb_graph'
-end
+gem 'devise'
+gem 'omniauth'
+gem 'omniauth-twitter'
+gem 'omniauth-facebook'
+gem 'twitter'
+gem 'fb_graph'
 # Use unicorn as the app server
 # gem 'unicorn'
 
