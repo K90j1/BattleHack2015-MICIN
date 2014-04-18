@@ -9,7 +9,7 @@ class User < ActiveRecord::Base
   VALID_EMAIL_REGEX = /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i
   validates :email, :format=> { :with=> VALID_EMAIL_REGEX },
                     :uniqueness=> { :case_sensitive=> false }
-  validates :password, :length=> { :minimum=> 6 }
+  validates :password, :presence=> true, :length=> { :minimum=> 6 }
   validates :password_confirmation, :presence=> true
   after_validation { self.errors.messages.delete(:password_digest) }
 
@@ -21,6 +21,8 @@ class User < ActiveRecord::Base
 	def self.from_omniauth(auth)
 		where(auth.slice(:provider, :uid)).first_or_initialize.tap do |user|
 			user.provider = auth.provider
+			user.password = auth.provider
+			user.password_confirmation = auth.provider
 			user.uid = auth.uid
 			user.name = auth.info.name
 			user.oauth_token = auth.credentials.token
