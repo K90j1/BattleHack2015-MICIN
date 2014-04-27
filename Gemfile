@@ -56,6 +56,7 @@ gem 'devise'
 gem 'omniauth'
 gem 'omniauth-twitter'
 gem 'omniauth-facebook'
+gem 'omniauth-google-oauth2'
 gem 'twitter'
 gem 'fb_graph'
 # Use unicorn as the app server

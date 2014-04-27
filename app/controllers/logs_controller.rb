@@ -29,7 +29,7 @@ class LogsController < ApplicationController
   # POST /logs.json
   def create
 		@user = User.find(params[:user_id])
-		@log = @user.log.build(params[:log])
+		@log = @user.log.build(log_params)
     respond_to do |format|
       if @log.save
         format.html { redirect_to @log}

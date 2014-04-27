@@ -28,4 +28,13 @@ Elog::Application.configure do
   config.assets.debug = true
   config.assets.precompile += %w(*.png *.jpg *.jpeg *.gif)
   config.assets.compile = true
+
+	ENV['FACEBOOK_APP_ID'] = '273641516138791'
+	ENV['FACEBOOK_SECRET'] = '1b31c9298bf357ae2c1a760b3633132d'
+	ENV['GOOGLE_APP_ID'] = '433415727900-p89g0rek9bqhg8kvusna8nsd4tjfbiud.apps.googleusercontent.com'
+	ENV['GOOGLE_SECRET'] = 'nlXt-Fr1hhyBJdCwwF_52dtu'
+	ENV['TWITTER_APP_ID'] = 'h8X5VHjt7MBldoQV98MCGA'
+	ENV['TWITTER_SECRET'] = 'gln3odZ9iLe0feK6D884uFaIk3wxROAamBSB5V6kE'
+	ENV['ADAPTER'] = 'sqlite3'
+
 end

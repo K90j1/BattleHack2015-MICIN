@@ -1,4 +1,7 @@
 OmniAuth.config.logger = Rails.logger
 Rails.application.config.middleware.use OmniAuth::Builder do
-	provider :facebook, '273641516138791', '1b31c9298bf357ae2c1a760b3633132d'
+	provider :developer unless Rails.env.production?
+	provider :twitter, ENV['TWITTER_APP_ID'], ENV['TWITTER_SECRET']
+	provider :facebook, ENV['FACEBOOK_APP_ID'], ENV['FACEBOOK_SECRET']
+	provider :google_oauth2, ENV['GOOGLE_APP_ID'], ENV['GOOGLE_SECRET']
 end
