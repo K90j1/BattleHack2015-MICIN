@@ -23,6 +23,7 @@ class LogsController < ApplicationController
 
   # GET /logs/1/edit
   def edit
+		@log = Log.find(params[:id])
   end
 
   # POST /logs
