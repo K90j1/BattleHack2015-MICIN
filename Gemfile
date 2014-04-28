@@ -2,56 +2,30 @@ source 'https://rubygems.org'
 #ruby-gemset=railstutorial_rails_4_0
 ruby '2.1.1'
 
-# Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.3'
-
 group :development do
-# Use sqlite3 as the database for Active Record
   gem 'sqlite3'
-
 end
-
-# Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0'
-
-# Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
-
-# Use CoffeeScript for .js.coffee assets and views
 gem 'coffee-rails', '~> 4.0.0'
 
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
-
-# Use jquery as the JavaScript library
 gem 'jquery-rails'
-
-# Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
 gem 'turbolinks'
-
-# Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 1.2'
-
-# adding
 gem 'bcrypt'
-gem 'bootstrap-sass'
 gem 'will_paginate'
-gem 'bootstrap-will_paginate'
-
-#gem 'oauth-plugin', '~> 0.4.0'
-
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
   gem 'sdoc', require: false
 end
-
 group :production do
   gem 'mysql2'
 end
 
-# Use ActiveModel has_secure_password
 gem 'bcrypt-ruby', '~> 3.1.2'
-
 gem 'devise'
 gem 'omniauth'
 gem 'omniauth-twitter'
@@ -59,11 +33,13 @@ gem 'omniauth-facebook'
 gem 'omniauth-google-oauth2'
 gem 'twitter'
 gem 'fb_graph'
-# Use unicorn as the app server
-# gem 'unicorn'
+gem 'font-awesome-rails'
+gem 'tweet-button'
+gem 'social-buttons'
+gem 'chartkick'
 
-# Use Capistrano for deployment
-# gem 'capistrano', group: :development
-
-# Use debugger
-# gem 'debugger', group: [:development, :test]
+gem 'bootstrap-sass'
+gem 'bootstrap-will_paginate'
+gem 'groupdate'
+gem 'bootswatch-rails'
+gem 'syntax-highlighter-rails'

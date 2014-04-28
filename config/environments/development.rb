@@ -31,8 +31,8 @@ Elog::Application.configure do
 
 	ENV['FACEBOOK_APP_ID'] = '273641516138791'
 	ENV['FACEBOOK_SECRET'] = '1b31c9298bf357ae2c1a760b3633132d'
-	ENV['GOOGLE_APP_ID'] = '726927775771-u77spg2vvppssdqfstfr6muouijhlbv3.apps.googleusercontent.com'
-	ENV['GOOGLE_SECRET'] = 'nlXt-Fr1hhyBJdCwwF_52dtu'
+	ENV['GOOGLE_APP_ID'] = '726927775771-d1mc11da3g5b2ljqfaequv5430taaocl.apps.googleusercontent.com'
+	ENV['GOOGLE_SECRET'] = '00m3rtVyd5dDaIOYWpm3wkla'
 	ENV['TWITTER_APP_ID'] = 'h8X5VHjt7MBldoQV98MCGA'
 	ENV['TWITTER_SECRET'] = 'gln3odZ9iLe0feK6D884uFaIk3wxROAamBSB5V6kE'
 	ENV['ADAPTER'] = 'sqlite3'
