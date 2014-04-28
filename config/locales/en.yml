@@ -37,6 +37,7 @@ en:
   SignIn: 'ログイン'
   SignInFacebook: 'Facebookでログイン'
   SignInTwitter: 'Twitterでログイン'
+  SignInGoogle: 'Googleでログイン'
   SignUp: '登録'
   Success: '成功しました'
   Failed: '失敗しました'

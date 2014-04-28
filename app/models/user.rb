@@ -24,10 +24,18 @@ class User < ActiveRecord::Base
 			user.password = auth.provider
 			user.password_confirmation = auth.provider
 			user.uid = auth.uid
+			user.email = set_dummy_mail(auth.info.nickname)
 			user.name = auth.info.name
 			user.oauth_token = auth.credentials.token
-			user.oauth_expires_at = Time.at(auth.credentials.expires_at)
+			user.oauth_expires_at = nil
+			if auth.provider == 'facebook'
+				user.oauth_expires_at = Time.at(auth.credentials.expires_at)
+			end
 			user.save!
 		end
+	end
+
+	def self.set_dummy_mail(name)
+		return "#{name}@example.com"
 	end
 end
