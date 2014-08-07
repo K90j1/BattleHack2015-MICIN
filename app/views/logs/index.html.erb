@@ -28,5 +28,5 @@
 <%= link_to t(:NewLog), new_user_log_path(current_user) %>
 <%= tweet_button %>
 <%= google_plus_button %>
-<%= pie_chart Log.group(:created_at).count %>
+<%= line_chart Log.group_by_day(:created_at).count %>
 
