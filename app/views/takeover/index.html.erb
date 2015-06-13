@@ -1,0 +1,11 @@
+<div style="height:400px; background-image:url(<%= asset_path 'back1.png' %>); background-repeat:no-repeat">
+	<h1>サイバーノードに接触！</h1>
+<p>スキャンを開始しますか？</p>
+<%= button_to 'スキャン'\
+, { :controller => 'scan'\
+, :action => 'index'\
+, :proximityUUID => 'testId'\
+, :UUID => 'testUuid' }\
+, :method => :post
+%>
+</div>
