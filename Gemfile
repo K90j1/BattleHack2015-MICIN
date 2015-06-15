@@ -1,7 +1,10 @@
 source 'https://rubygems.org'
 #ruby-gemset=railstutorial_rails_4_0
-group :production do
+group :development, :test do
 	ruby '2.1.1'
+end
+group :production do
+	ruby '2.1.6'
 end
 gem 'rails', '4.0.3'
 gem 'sass-rails', '~> 4.0.0'
