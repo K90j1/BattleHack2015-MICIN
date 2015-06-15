@@ -69,20 +69,21 @@
     }
 }
 
+#pragma mark - CLLocationManagerDelegate methods
 // Beaconに入ったときに呼ばれる
 - (void)locationManager:(CLLocationManager *)manager
-         didEnterRegion:(CLRegion *)region
+		 didEnterRegion:(CLRegion *)region
 {
-    NSLog(@"%@", NSStringFromSelector(_cmd));
-    [self sendNotification:@"didEnterRegion"];
+	NSLog(@"%@", NSStringFromSelector(_cmd));
+	[self sendNotification:@"サイバーノードに接近!!!"];
 }
 
 // Beaconから出たときに呼ばれる
 - (void)locationManager:(CLLocationManager *)manager
-          didExitRegion:(CLRegion *)region
+		  didExitRegion:(CLRegion *)region
 {
-    NSLog(@"%@", NSStringFromSelector(_cmd));
-    [self sendNotification:@"didExitRegion"];
+	NSLog(@"%@", NSStringFromSelector(_cmd));
+	[self sendNotification:@"サイバーノードから離れました!!!"];
 }
 
 // Beaconとの状態が確定したときに呼ばれる
