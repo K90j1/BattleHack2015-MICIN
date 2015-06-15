@@ -162,6 +162,10 @@
             alpha = 1.0;
             break;
         case CLProximityNear:
+            [self.manager stopMonitoringForRegion:self.region];
+            [self.manager stopRangingBeaconsInRegion:self.region];
+            [self.navigationController pushViewController:second animated:YES];
+            self.exit = true;
             proximityString = @"CLProximityNear";
             alpha = 0.8;
             break;
