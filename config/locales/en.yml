@@ -20,34 +20,4 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 
 en:
-  WelcomeMessage: 'ようこそ、コラボレーションエラーログへ'
-  UpdateUser: 'プロフィールを更新しました'
-  DeleteUser: 'ユーザを削除しました'
-  Title: 'コラボレーションエラーログ'
-  Type: 'タイトル'
-  Log: 'エラーログ'
-  Url: '参考になったURL'
-  Resolve: '解決方法'
-  Edit: '更新'
-  Back: '戻る'
-  Show: '詳細'
-  Destroy: '削除'
-  NewLog: 'あたらしいエラー'
-  SignOut: 'ログアウト'
-  SignIn: 'ログイン'
-  SignInFacebook: 'Facebookでログイン'
-  SignInTwitter: 'Twitterでログイン'
-  SignInGoogle: 'Googleでログイン'
-  SignUp: '登録'
-  Success: '成功しました'
-  Failed: '失敗しました'
-  Name: 'お名前'
-  Email: 'メールアドレス'
-  Password: 'パスワード'
-  PasswordConfirmation: 'パスワードの再入力'
-  NewUser: '登録'
-  helpers:
-    submit:
-      create: "%{model} をつくる"
-      update: "%{model} を更新する"
-
+  Title: 'MIC-IN'
