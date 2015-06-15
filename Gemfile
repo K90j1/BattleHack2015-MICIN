@@ -1,13 +1,18 @@
 source 'https://rubygems.org'
 #ruby-gemset=railstutorial_rails_4_0
-ruby '2.1.1'
-
+group :production do
+	ruby '2.1.1'
+end
 gem 'rails', '4.0.3'
-gem 'mysql2'
 gem 'sass-rails', '~> 4.0.0'
 gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.0.0'
-gem 'pg'
+group :development, :test do
+	gem 'mysql2'
+end
+group :production do
+	gem 'pg'
+end
 
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
