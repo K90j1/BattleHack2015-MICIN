@@ -1,11 +1,19 @@
 <div style="height:400px; background-image:url(<%= asset_path 'back2.png' %>); background-repeat:no-repeat">
-	<h1>ハニーポットが仕掛けられています！</h1>
-	<p>インジェクションのターゲットを選んでください</p>
-	<%= button_to 'A. プラント',{ :controller => 'locations'\
-, :action => 'index'\
-, :proximityUUID => @proximityUUID\
-, :UUID => @UUID }\
-, :method => :post %>
-	<%= button_to 'B. エンフォースメント', { :controller => 'locations', :action => 'index' }, :method => :get %>
-	<%= button_to 'C. セキュリティ', { :controller => 'locations', :action => 'index' }, :method => :get %>
+    <h1>ハニーポットが仕掛けられています！<small><br>以下のクイズに答えてください。</small></h1>
+    <p>Q. 本のタイトル名と作者名が一致するものを答えよ</p>
+    <%= button_to '1. 永遠の0 : 百田尚樹', {:controller => 'locations'\
+        , :proximityUUID => @proximityUUID\
+        , :UUID => @UUID\
+        , :result => 'success'}\
+        , :method => :post %>
+    <%= button_to '2. 幸福な生活 : 百田尚樹', {:controller => 'locations' \
+        , :proximityUUID => @proximityUUID\
+        , :UUID => @UUID\
+        , :result => 'fault'} \
+        , :method => :post %>
+    <%= button_to '3. 白ゆき姫殺人事件 : 湊かなえ', {:controller => 'locations' \
+        , :proximityUUID => @proximityUUID\
+        , :UUID => @UUID\
+        , :result => 'fault'} \
+        , :method => :post %>
 </div>

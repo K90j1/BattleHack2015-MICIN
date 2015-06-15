@@ -77,11 +77,5 @@ Elog::Application.configure do
 
   # Use default logging formatter so that PID and timestamp are not suppressed.
 
-	ENV['FACEBOOK_APP_ID'] = '273641516138791'
-	ENV['FACEBOOK_SECRET'] = '1b31c9298bf357ae2c1a760b3633132d'
-	ENV['GOOGLE_APP_ID'] = '433415727900-p89g0rek9bqhg8kvusna8nsd4tjfbiud.apps.googleusercontent.com'
-	ENV['GOOGLE_SECRET'] = 'nlXt-Fr1hhyBJdCwwF_52dtu'
-	ENV['TWITTER_APP_ID'] = 'Me5OJweYx1PzU30ZrswePmtjt'
-	ENV['TWITTER_SECRET'] = 'wdlJxaYRMyPS8I1CHiPgy3K6vI39V7lYu2G1ujv8Ko9o664Ba8'
 
 end

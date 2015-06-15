@@ -4,8 +4,8 @@
 <%= button_to 'スキャン'\
 , { :controller => 'scan'\
 , :action => 'index'\
-, :proximityUUID => 'testId'\
-, :UUID => 'testUuid' }\
+, :proximityUUID => @proximityUUID\
+, :UUID => @UUID }\
 , :method => :post
 %>
 </div>

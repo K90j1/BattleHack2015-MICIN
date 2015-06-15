@@ -13,6 +13,7 @@
 
  = require jquery
  = require jquery_ujs
+//= require twitter/bootstrap
  = require turbolinks
  = require bootstrap
  = require_tree .
@@ -30,8 +31,7 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require twitter/bootstrap
 //= require turbolinks
-//= require syntax-highlighter-rails/shCore
-//= require syntax-highlighter-rails/shBrushBash
 //= require bootstrap
 //= require_tree .

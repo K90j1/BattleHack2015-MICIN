@@ -26,10 +26,12 @@ group :doc do
 end
 gem 'bcrypt-ruby', '~> 3.1.2'
 gem 'devise'
-gem 'font-awesome-rails'
 gem 'chartkick'
 
-gem 'bootstrap-sass'
 gem 'bootstrap-will_paginate'
 gem 'groupdate'
 gem 'bootswatch-rails'
+gem 'bootstrap-sass'
+gem 'therubyracer'
+gem 'less-rails' #Sprockets (what Rails 3.1 uses for its asset pipeline) supports LESS
+gem 'twitter-bootstrap-rails'
