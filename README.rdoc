@@ -14,8 +14,7 @@
    {Apache License, Version 2.0}[http://www.apache.org/licenses/LICENSE-2.0]
 
 * Suponserd
-   {paypal.com - ペイパル 日本公式サイト}[https://www.paypal.com/jp/webapps/mpp/home]
-   {Braintree: Accept Payments Online | Mobile Payments}[https://www.braintreepayments.com/]
-   {Heroku | Cloud Application Platform}[https://www.heroku.com/home]
-   {OpenTypeフォント「Eunomia」}[http://dotcolon.net/font/eunomia/]
+{paypal.com - ペイパル 日本公式サイト}[https://www.paypal.com/jp/webapps/mpp/home]
+{Braintree: Accept Payments Online | Mobile Payments}[https://www.braintreepayments.com/]
+{Heroku | Cloud Application Platform}[https://www.heroku.com/home]
 {OpenTypeフォント「Eunomia」}[http://dotcolon.net/font/eunomia/]
