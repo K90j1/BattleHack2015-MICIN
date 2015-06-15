@@ -3,6 +3,9 @@
 * Ruby version
    ruby '2.1.6'
 
+* Slide
+  * {MIC-IN Bitcoinを獲得する陣取り合戦ゲーム}[http://www.slideshare.net/k90j1/battle-hackkey]
+
 * System dependencies
    iOS 8 - ObjecitveC
 
