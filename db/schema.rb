@@ -11,33 +11,14 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140417082757) do
+ActiveRecord::Schema.define(version: 20150613095034) do
 
-  create_table "logs", force: true do |t|
-    t.string   "type"
-    t.text     "log"
-    t.text     "resolve"
+  create_table "locations", force: true do |t|
+    t.string   "proximityUUID"
+    t.string   "UUID"
+    t.integer  "Trap"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.string   "url"
-    t.integer  "user_id"
   end
-
-  create_table "users", force: true do |t|
-    t.string   "name"
-    t.string   "email"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-    t.string   "password_digest"
-    t.string   "remember_token"
-    t.boolean  "admin",            default: false
-    t.string   "uid"
-    t.string   "oauth_token"
-    t.datetime "oauth_expires_at"
-    t.string   "provider"
-  end
-
-  add_index "users", ["email"], name: "index_users_on_email", unique: true, using: :btree
-  add_index "users", ["remember_token"], name: "index_users_on_remember_token", using: :btree
 
 end

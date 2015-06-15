@@ -1,0 +1,17 @@
+<p id="notice"><%= notice %></p>
+<h1><%= @log.type %></h1>
+<p>
+	<strong><%= t(:Log) %></strong>
+<p>
+<pre><code><%= @log.log %></code></pre>
+<p>
+	<strong><%= t(:Url) %></strong>
+	<%= @log.url %>
+</p>
+<p>
+	<strong><%= t(:Resolve) %></strong>
+	<%= @log.resolve %>
+</p>
+
+<%= link_to t(:Back), user_logs_path(@log.user_id) %>
+

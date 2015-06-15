@@ -6,9 +6,9 @@
 development:
   adapter: mysql2
   encoding: utf8
-  database: db_elog
-  username: u_elog
-  password: p_elog
+  database: db_micin
+  username: u_micin
+  password: p_micin
   host: 127.0.0.1
   port: 3306
 
@@ -22,10 +22,10 @@ test:
   timeout: 5000
 
 production:
-  adapter: mysql2
+  adapter: postgresql
   encoding: utf8
-  database: db_elog
-  username: u_elog
-  password: p_elog
-  host: 127.0.0.1
-  port: 3306
+  database: d8hmoi59iv8jdg
+  username: bxiftynylutmoe
+  password: bJWu_BusumT_ltqKDJ8MpG-c2d
+  host: ec2-54-83-17-8.compute-1.amazonaws.com
+  port: 5432
