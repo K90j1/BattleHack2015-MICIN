@@ -51,13 +51,13 @@
     self.exit = false;
     if ([CLLocationManager isMonitoringAvailableForClass:[CLBeaconRegion class]]) {
         // 生成したUUIDからNSUUIDを作成
-        NSString *uuid = @"1E21BCE0-7655-4647-B492-A3F8DE2F9A02";
-        self.proximityUUID = [[NSUUID alloc] initWithUUIDString:uuid];
+        self.beaconUUID = @"1E21BCE0-7655-4647-B492-A3F8DE2F9A02";
+        self.proximityUUID = [[NSUUID alloc] initWithUUIDString:self.beaconUUID];
 
         // CLBeaconRegionを作成
         self.region = [[CLBeaconRegion alloc]
                 initWithProximityUUID:self.proximityUUID
-                           identifier:@"com.coronet-internet.BeaconReceiver"];
+                           identifier:@"45GXVEBQ63.com.coronet-internet.micin"];
         self.region.notifyOnEntry = YES;
         self.region.notifyOnExit = YES;
         self.region.notifyEntryStateOnDisplay = NO;
@@ -128,50 +128,27 @@
         return;
     }
 
-    CLProximity proximity = CLProximityUnknown;
-    NSString *proximityString = @"CLProximityUnknown";
-    CLLocationAccuracy locationAccuracy = 0.0;
-    NSInteger rssi = 0;
-    NSNumber* major = @0;
-    NSNumber* minor = @0;
-
-    // 最初のオブジェクト = 最も近いBeacon
     CLBeacon *beacon = beacons.firstObject;
-
-    proximity = beacon.proximity;
-    locationAccuracy = beacon.accuracy;
-    rssi = beacon.rssi;
-    major = beacon.major;
-    minor = beacon.minor;
-
-    CGFloat alpha = 1.0;
+    CLProximity proximity = beacon.proximity;
     SecondView *second = [[SecondView alloc] init];
-    second.proximityUUID = self.proximityUUID;
+    second.beaconUUID = self.beaconUUID;
 
     switch (proximity) {
         case CLProximityUnknown:
-            proximityString = @"CLProximityUnknown";
-            alpha = 0.3;
             break;
         case CLProximityImmediate:
             [self.manager stopMonitoringForRegion:self.region];
             [self.manager stopRangingBeaconsInRegion:self.region];
             [self.navigationController pushViewController:second animated:YES];
             self.exit = true;
-            proximityString = @"CLProximityImmediate";
-            alpha = 1.0;
             break;
         case CLProximityNear:
-            [self.manager stopMonitoringForRegion:self.region];
-            [self.manager stopRangingBeaconsInRegion:self.region];
-            [self.navigationController pushViewController:second animated:YES];
-            self.exit = true;
-            proximityString = @"CLProximityNear";
-            alpha = 0.8;
+//            [self.manager stopMonitoringForRegion:self.region];
+//            [self.manager stopRangingBeaconsInRegion:self.region];
+//            [self.navigationController pushViewController:second animated:YES];
+//            self.exit = true;
             break;
         case CLProximityFar:
-            proximityString = @"CLProximityFar";
-            alpha = 0.5;
             break;
         default:
             break;
@@ -227,7 +204,6 @@
     NSLog(@"sendNotification");
 
     UIApplication *application = [UIApplication sharedApplication];
-//    [self application:@"CLProximityImmediate"];
     if ([application respondsToSelector:@selector(registerUserNotificationSettings:)]) {
         UIUserNotificationSettings *settings = [UIUserNotificationSettings settingsForTypes:UIUserNotificationTypeAlert|UIUserNotificationTypeSound categories:nil];
         [application registerUserNotificationSettings:settings];

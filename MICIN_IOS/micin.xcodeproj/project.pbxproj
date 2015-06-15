@@ -29,7 +29,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		6D94AABD1B2CB9EC00D8801D /* MICIN_IOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MICIN_IOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6D94AABD1B2CB9EC00D8801D /* micin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = micin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6D94AAC11B2CB9EC00D8801D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6D94AAC21B2CB9EC00D8801D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		6D94AAC41B2CB9EC00D8801D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -37,7 +37,7 @@
 		6D94AACB1B2CB9EC00D8801D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6D94AACD1B2CB9EC00D8801D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		6D94AAD01B2CB9EC00D8801D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		6D94AAD61B2CB9EC00D8801D /* MICIN_IOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MICIN_IOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6D94AAD61B2CB9EC00D8801D /* micin.temp_caseinsensitive_renameTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = micin.temp_caseinsensitive_renameTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6D94AADB1B2CB9EC00D8801D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6D94AADC1B2CB9EC00D8801D /* MICIN_IOSTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MICIN_IOSTests.m; sourceTree = "<group>"; };
 		78C7844469609B8EEBCE524C /* FirstView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirstView.h; sourceTree = "<group>"; };
@@ -77,8 +77,8 @@
 		6D94AABE1B2CB9EC00D8801D /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				6D94AABD1B2CB9EC00D8801D /* MICIN_IOS.app */,
-				6D94AAD61B2CB9EC00D8801D /* MICIN_IOSTests.xctest */,
+				6D94AABD1B2CB9EC00D8801D /* micin.app */,
+				6D94AAD61B2CB9EC00D8801D /* micin.temp_caseinsensitive_renameTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -130,9 +130,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		6D94AABC1B2CB9EC00D8801D /* MICIN_IOS */ = {
+		6D94AABC1B2CB9EC00D8801D /* micin.temp_caseinsensitive_rename */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 6D94AAE01B2CB9EC00D8801D /* Build configuration list for PBXNativeTarget "MICIN_IOS" */;
+			buildConfigurationList = 6D94AAE01B2CB9EC00D8801D /* Build configuration list for PBXNativeTarget "micin.temp_caseinsensitive_rename" */;
 			buildPhases = (
 				6D94AAB91B2CB9EC00D8801D /* Sources */,
 				6D94AABA1B2CB9EC00D8801D /* Frameworks */,
@@ -142,14 +142,14 @@
 			);
 			dependencies = (
 			);
-			name = MICIN_IOS;
+			name = micin.temp_caseinsensitive_rename;
 			productName = MICIN_IOS;
-			productReference = 6D94AABD1B2CB9EC00D8801D /* MICIN_IOS.app */;
+			productReference = 6D94AABD1B2CB9EC00D8801D /* micin.app */;
 			productType = "com.apple.product-type.application";
 		};
-		6D94AAD51B2CB9EC00D8801D /* MICIN_IOSTests */ = {
+		6D94AAD51B2CB9EC00D8801D /* micin.temp_caseinsensitive_renameTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 6D94AAE31B2CB9EC00D8801D /* Build configuration list for PBXNativeTarget "MICIN_IOSTests" */;
+			buildConfigurationList = 6D94AAE31B2CB9EC00D8801D /* Build configuration list for PBXNativeTarget "micin.temp_caseinsensitive_renameTests" */;
 			buildPhases = (
 				6D94AAD21B2CB9EC00D8801D /* Sources */,
 				6D94AAD31B2CB9EC00D8801D /* Frameworks */,
@@ -160,9 +160,9 @@
 			dependencies = (
 				6D94AAD81B2CB9EC00D8801D /* PBXTargetDependency */,
 			);
-			name = MICIN_IOSTests;
+			name = micin.temp_caseinsensitive_renameTests;
 			productName = MICIN_IOSTests;
-			productReference = 6D94AAD61B2CB9EC00D8801D /* MICIN_IOSTests.xctest */;
+			productReference = 6D94AAD61B2CB9EC00D8801D /* micin.temp_caseinsensitive_renameTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -176,6 +176,11 @@
 				TargetAttributes = {
 					6D94AABC1B2CB9EC00D8801D = {
 						CreatedOnToolsVersion = 6.3.2;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
 					};
 					6D94AAD51B2CB9EC00D8801D = {
 						CreatedOnToolsVersion = 6.3.2;
@@ -183,7 +188,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 6D94AAB81B2CB9EC00D8801D /* Build configuration list for PBXProject "MICIN_IOS" */;
+			buildConfigurationList = 6D94AAB81B2CB9EC00D8801D /* Build configuration list for PBXProject "micin" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -196,8 +201,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				6D94AABC1B2CB9EC00D8801D /* MICIN_IOS */,
-				6D94AAD51B2CB9EC00D8801D /* MICIN_IOSTests */,
+				6D94AABC1B2CB9EC00D8801D /* micin.temp_caseinsensitive_rename */,
+				6D94AAD51B2CB9EC00D8801D /* micin.temp_caseinsensitive_renameTests */,
 			);
 		};
 /* End PBXProject section */
@@ -248,7 +253,7 @@
 /* Begin PBXTargetDependency section */
 		6D94AAD81B2CB9EC00D8801D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 6D94AABC1B2CB9EC00D8801D /* MICIN_IOS */;
+			target = 6D94AABC1B2CB9EC00D8801D /* micin.temp_caseinsensitive_rename */;
 			targetProxy = 6D94AAD71B2CB9EC00D8801D /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -290,7 +295,8 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Kyoji Kato (E7VQ8P9Z56)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Kyoji Kato (E7VQ8P9Z56)";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -333,7 +339,8 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Kyoji Kato (E7VQ8P9Z56)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Kyoji Kato (E7VQ8P9Z56)";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
@@ -359,7 +366,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = MICIN_IOS/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = micin;
 			};
 			name = Debug;
 		};
@@ -369,7 +376,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = MICIN_IOS/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = micin;
 			};
 			name = Release;
 		};
@@ -387,7 +394,7 @@
 				);
 				INFOPLIST_FILE = MICIN_IOSTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = micin.temp_caseinsensitive_renameTests;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MICIN_IOS.app/MICIN_IOS";
 			};
 			name = Debug;
@@ -402,7 +409,7 @@
 				);
 				INFOPLIST_FILE = MICIN_IOSTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = micin.temp_caseinsensitive_renameTests;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MICIN_IOS.app/MICIN_IOS";
 			};
 			name = Release;
@@ -410,30 +417,32 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		6D94AAB81B2CB9EC00D8801D /* Build configuration list for PBXProject "MICIN_IOS" */ = {
+		6D94AAB81B2CB9EC00D8801D /* Build configuration list for PBXProject "micin" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				6D94AADE1B2CB9EC00D8801D /* Debug */,
 				6D94AADF1B2CB9EC00D8801D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
-		6D94AAE01B2CB9EC00D8801D /* Build configuration list for PBXNativeTarget "MICIN_IOS" */ = {
+		6D94AAE01B2CB9EC00D8801D /* Build configuration list for PBXNativeTarget "micin.temp_caseinsensitive_rename" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				6D94AAE11B2CB9EC00D8801D /* Debug */,
 				6D94AAE21B2CB9EC00D8801D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
 		};
-		6D94AAE31B2CB9EC00D8801D /* Build configuration list for PBXNativeTarget "MICIN_IOSTests" */ = {
+		6D94AAE31B2CB9EC00D8801D /* Build configuration list for PBXNativeTarget "micin.temp_caseinsensitive_renameTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				6D94AAE41B2CB9EC00D8801D /* Debug */,
 				6D94AAE51B2CB9EC00D8801D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
 		};
 /* End XCConfigurationList section */
 	};

@@ -8,7 +8,7 @@
 @implementation SecondView
 
 @synthesize webView = _webView;
-@synthesize proximityUUID = _proximityUUID;
+@synthesize beaconUUID =  _beaconUUID;
 
 - (id) init {
     self = [super init];
@@ -21,14 +21,25 @@
     CGRect rect = self.view.bounds;
     self.webView = [[UIWebView alloc] initWithFrame:rect];
     self.webView.delegate = self;
-    [self.view addSubview:self.webView];
-    NSURL *url = [NSURL URLWithString: @"https://secret-inlet-6229.herokuapp.com/"];
     NSString *uuid = [[NSUUID UUID] UUIDString];
-    NSString *body = [NSString stringWithFormat: @"proximityUUID=%@&UUID=%@", _proximityUUID, uuid];
-    NSMutableURLRequest *urlRequest = [[NSMutableURLRequest alloc]initWithURL: url];
-    [urlRequest setHTTPMethod: @"GET"];
-    [urlRequest setHTTPBody: [body dataUsingEncoding: NSUTF8StringEncoding]];
-    [self.webView loadRequest: urlRequest];
+    NSString *urlStr = [NSString stringWithFormat:@"https://secret-inlet-6229.herokuapp.com/?proximityUUID=%@&UUID=%@"
+            ,self.beaconUUID
+            ,uuid];
+    NSURL* nsUrl = [NSURL URLWithString:urlStr];
+    NSURLRequest* request = [NSURLRequest requestWithURL:nsUrl cachePolicy:NSURLRequestReloadIgnoringLocalAndRemoteCacheData timeoutInterval:30];
+    [self.webView loadRequest:request];
+    [self.view addSubview:self.webView];
 }
+
+- (BOOL)webView:(UIWebView *)webView shouldStartLoadWithRequest:(NSURLRequest *)request navigationType:(UIWebViewNavigationType)navigationType
+{
+    if (navigationType == UIWebViewNavigationTypeLinkClicked ) {
+        [[UIApplication sharedApplication] openURL: [request URL]];
+        return NO;
+    }
+
+    return YES;
+}
+
 
 @end

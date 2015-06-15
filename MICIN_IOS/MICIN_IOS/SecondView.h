@@ -9,7 +9,7 @@
 @interface SecondView : UIViewController <UIWebViewDelegate>
 
 @property(strong, nonatomic) UIWebView *webView;
-@property (strong, nonatomic) NSUUID *proximityUUID;
+@property (strong, nonatomic) NSString *beaconUUID;
 
 @end
 
