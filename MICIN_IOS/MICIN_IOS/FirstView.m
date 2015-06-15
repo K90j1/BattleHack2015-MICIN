@@ -146,6 +146,7 @@
 
     CGFloat alpha = 1.0;
     SecondView *second = [[SecondView alloc] init];
+    second.proximityUUID = self.proximityUUID;
 
     switch (proximity) {
         case CLProximityUnknown:
@@ -171,8 +172,6 @@
         default:
             break;
     }
-
-    self.currentMinor = minor;
 }
 
 - (void)locationManager:(CLLocationManager *)manager rangingBeaconsDidFailForRegion:(CLBeaconRegion *)region withError:(NSError *)error

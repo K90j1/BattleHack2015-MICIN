@@ -4,9 +4,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "FirstView.h"
 
 @interface SecondView : UIViewController <UIWebViewDelegate>
 
 @property(strong, nonatomic) UIWebView *webView;
+@property (strong, nonatomic) NSUUID *proximityUUID;
 
 @end
+

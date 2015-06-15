@@ -14,8 +14,7 @@
 @property (strong, nonatomic) NSUUID *proximityUUID;
 @property (strong, nonatomic) CLLocationManager *manager;
 @property (strong, nonatomic) CLBeaconRegion *region;
-@property (nonatomic) NSNumber *currentMinor;
 
-@property (nonatomic) Boolean *exit;
+@property (nonatomic) char *exit;
 
 @end

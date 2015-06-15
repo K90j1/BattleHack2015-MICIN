@@ -8,6 +8,7 @@
 @implementation SecondView
 
 @synthesize webView = _webView;
+@synthesize proximityUUID = _proximityUUID;
 
 - (id) init {
     self = [super init];
@@ -21,11 +22,13 @@
     self.webView = [[UIWebView alloc] initWithFrame:rect];
     self.webView.delegate = self;
     [self.view addSubview:self.webView];
-
-    NSString *strURL = @"https://secret-inlet-6229.herokuapp.com/";
-    NSURL *url = [NSURL URLWithString:strURL];
-    NSURLRequest *urlRequest = [NSURLRequest requestWithURL:url];
-
+    NSURL *url = [NSURL URLWithString: @"https://secret-inlet-6229.herokuapp.com/"];
+    NSString *uuid = [[NSUUID UUID] UUIDString];
+    NSString *body = [NSString stringWithFormat: @"proximityUUID=%@&UUID=%@", _proximityUUID, uuid];
+    NSMutableURLRequest *urlRequest = [[NSMutableURLRequest alloc]initWithURL: url];
+    [urlRequest setHTTPMethod: @"GET"];
+    [urlRequest setHTTPBody: [body dataUsingEncoding: NSUTF8StringEncoding]];
     [self.webView loadRequest: urlRequest];
 }
+
 @end
