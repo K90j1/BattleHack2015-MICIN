@@ -4,8 +4,10 @@
   * {MIC-IN Bitcoinを獲得する陣取り合戦ゲーム}[http://www.slideshare.net/k90j1/battle-hackkey]
 
 * Summary
-   iBeacon
-   Push Notice
+   Ruby on Rails
+   iOS WebView
+   iOS iBeacon
+   iOS Push Notice
    
 * Ruby version
    ruby '2.1.6'
