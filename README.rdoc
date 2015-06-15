@@ -1,26 +1,20 @@
 == README
 
 * Ruby version
-   * ruby '2.1.6'
+   ruby '2.1.6'
 
 * System dependencies
-   * development MySQL
-   * production PostgreSQL
-
-* Configuration
+   iOS 8 - ObjecitveC
 
 * Database creation
+   development MySQL
+   production PostgreSQL
 
-* Database initialization
+* License
+   {Apache License, Version 2.0}[http://www.apache.org/licenses/LICENSE-2.0]
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+* Suponserd
+   {paypal.com - ペイパル 日本公式サイト}[https://www.paypal.com/jp/webapps/mpp/home]
+   {Braintree: Accept Payments Online | Mobile Payments}[https://www.braintreepayments.com/]
+   {Heroku | Cloud Application Platform}[https://www.heroku.com/home]
+   {OpenTypeフォント「Eunomia」}[http://dotcolon.net/font/eunomia/]
