@@ -13,7 +13,7 @@
    ruby '2.1.6'
 
 * System dependencies
-   iOS 8 - ObjecitveC
+   iOS 8 - ObjectiveC
 
 * Database creation
    Development MySQL
