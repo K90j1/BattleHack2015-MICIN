@@ -18,3 +18,4 @@
    {Braintree: Accept Payments Online | Mobile Payments}[https://www.braintreepayments.com/]
    {Heroku | Cloud Application Platform}[https://www.heroku.com/home]
    {OpenTypeフォント「Eunomia」}[http://dotcolon.net/font/eunomia/]
+{OpenTypeフォント「Eunomia」}[http://dotcolon.net/font/eunomia/]
