@@ -1,5 +1,0 @@
-/Users/bookair17/.rvm/rubies/ruby-2.1.1/bin/ruby mkrf_conf.rb 
-Installing base gem
-Building native extensions.  This could take a while...
-
-/Users/bookair17/.rvm/rubies/ruby-2.1.1/bin/ruby -rubygems /Users/bookair17/Documents/SourceCode/elog/vendor/bundle/ruby/2.1.0/gems/rake-10.1.1/bin/rake RUBYARCHDIR=/Users/bookair17/Documents/SourceCode/elog/vendor/bundle/ruby/2.1.0/extensions/x86_64-darwin-13/2.1.0/ruby-debug-ide-0.4.22 RUBYLIBDIR=/Users/bookair17/Documents/SourceCode/elog/vendor/bundle/ruby/2.1.0/extensions/x86_64-darwin-13/2.1.0/ruby-debug-ide-0.4.22
