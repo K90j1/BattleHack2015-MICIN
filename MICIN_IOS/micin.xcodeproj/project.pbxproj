@@ -12,7 +12,6 @@
 		6D94AACC1B2CB9EC00D8801D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6D94AACA1B2CB9EC00D8801D /* Main.storyboard */; };
 		6D94AACE1B2CB9EC00D8801D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6D94AACD1B2CB9EC00D8801D /* Images.xcassets */; };
 		6D94AAD11B2CB9EC00D8801D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6D94AACF1B2CB9EC00D8801D /* LaunchScreen.xib */; };
-		6D94AADD1B2CB9EC00D8801D /* MICIN_IOSTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D94AADC1B2CB9EC00D8801D /* MICIN_IOSTests.m */; };
 		78C786A2DEE2A5CD4EEEEE09 /* SecondView.m in Sources */ = {isa = PBXBuildFile; fileRef = 78C785893CFC92AEE07E193F /* SecondView.m */; };
 		78C7884B2AF80F3F4966C2B7 /* FirstView.m in Sources */ = {isa = PBXBuildFile; fileRef = 78C78B86E1EC1AC75B603425 /* FirstView.m */; };
 		78C78B40E05245D790335DEE /* top.png in Resources */ = {isa = PBXBuildFile; fileRef = 78C78FFA42CBF2EEEA6972FA /* top.png */; };
@@ -39,7 +38,6 @@
 		6D94AAD01B2CB9EC00D8801D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		6D94AAD61B2CB9EC00D8801D /* micin.temp_caseinsensitive_renameTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = micin.temp_caseinsensitive_renameTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6D94AADB1B2CB9EC00D8801D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		6D94AADC1B2CB9EC00D8801D /* MICIN_IOSTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MICIN_IOSTests.m; sourceTree = "<group>"; };
 		78C7844469609B8EEBCE524C /* FirstView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirstView.h; sourceTree = "<group>"; };
 		78C785893CFC92AEE07E193F /* SecondView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondView.m; sourceTree = "<group>"; };
 		78C78A0744C66F1AAA709E57 /* SecondView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondView.h; sourceTree = "<group>"; };
@@ -113,7 +111,6 @@
 		6D94AAD91B2CB9EC00D8801D /* MICIN_IOSTests */ = {
 			isa = PBXGroup;
 			children = (
-				6D94AADC1B2CB9EC00D8801D /* MICIN_IOSTests.m */,
 				6D94AADA1B2CB9EC00D8801D /* Supporting Files */,
 			);
 			path = MICIN_IOSTests;
@@ -244,7 +241,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6D94AADD1B2CB9EC00D8801D /* MICIN_IOSTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
